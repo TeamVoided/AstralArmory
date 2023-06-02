@@ -1,1 +1,1 @@
-# TeamVoided Kotlin Template  
+# Astral Armory
