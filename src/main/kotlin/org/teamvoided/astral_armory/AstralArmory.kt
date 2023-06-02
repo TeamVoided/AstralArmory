@@ -4,6 +4,7 @@ package org.teamvoided.astral_armory
 import net.minecraft.util.Identifier
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
+import org.teamvoided.astral_armory.blocks.AstralArmoryBlocks
 import org.teamvoided.astral_armory.items.AstralArmoryItems
 
 
@@ -21,5 +22,6 @@ fun onInitialize() {
     LOGGER.info("We shall be among the Stars!")
 
     AstralArmoryItems.register()
+    AstralArmoryBlocks.register()
 
 }
