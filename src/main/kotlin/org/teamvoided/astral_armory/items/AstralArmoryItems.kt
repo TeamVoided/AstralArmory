@@ -15,9 +15,11 @@ object AstralArmoryItems {
 
 
     val TEST: Item = Item(FabricItemSettings().maxCount(2))
+    val ASTRAL_NUGGET: Item = Item(FabricItemSettings())
 
     fun register() {
         registerItem(TEST, "test")
+        registerItem(ASTRAL_NUGGET, "astral_nugget")
     }
 
     fun registerItem(item: Item, id: String) {
