@@ -5,6 +5,7 @@
 
   "block.astral_armory.test_block":"Test Block",
   "block.astral_armory.astral_block":"Astralite Block",
+  "block.astral_armory.astral_tile":"Astralite Tiles",
 
   "itemGroup.astral_armory.astral_armory_tab": "Astral Armory"
 }

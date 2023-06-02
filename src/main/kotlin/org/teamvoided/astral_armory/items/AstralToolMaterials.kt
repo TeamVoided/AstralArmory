@@ -17,7 +17,7 @@ enum class AstralToolMaterials(
 ) : ToolMaterial {
     ASTRAL(
         0,
-        5003,
+        5000,
         0f,
         0f,
         0,
