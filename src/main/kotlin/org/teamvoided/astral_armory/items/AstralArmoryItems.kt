@@ -21,8 +21,8 @@ object AstralArmoryItems {
     val ASTRAL_SWORD: Item = AstralWeapon(9, -2.4f)
 
     val ASTRAL_LONGSWORD: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_TWINBLADE: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_RAPIER: Item = AstralWeapon(9, -2.4f)
+    val ASTRAL_TWINBLADE: Item = AstralWeapon(8, -2.4f)
+    val ASTRAL_RAPIER: Item = AstralWeapon(7, -2.4f)
     val ASTRAL_KATANA: Item = AstralWeapon(9, -2.4f)
     val ASTRAL_SAI: Item = AstralWeapon(9, -2.4f)
     val ASTRAL_SPEAR: Item = AstralWeapon(9, -2.4f)

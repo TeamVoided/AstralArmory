@@ -17,11 +17,13 @@ object AstralArmoryBlocks {
 
     val TEST_BLOCK: Block = Block(FabricBlockSettings.of(Material.AIR))
     val ASTRAL_BLOCK: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(3).sounds(BlockSoundGroup.NETHERITE).hardness(55f))
+    val ASTRAL_TILE: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(5).sounds(BlockSoundGroup.NETHERITE).hardness(50f))
 
 
     fun register() {
         registerBlock(TEST_BLOCK, "test_block")
         registerBlock(ASTRAL_BLOCK, "astral_block")
+        registerBlock(ASTRAL_TILE, "astral_tile")
     }
 
     fun registerBlock(block: Block, id: String) {
