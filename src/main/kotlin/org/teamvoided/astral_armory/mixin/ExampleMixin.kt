@@ -1,16 +1,19 @@
-package org.teamvoided.modid.mixin
+package org.teamvoided.astral_armory.mixin
 
 import net.minecraft.client.gui.screen.TitleScreen
 import org.spongepowered.asm.mixin.Mixin
 import org.spongepowered.asm.mixin.injection.At
 import org.spongepowered.asm.mixin.injection.Inject
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo
+import org.teamvoided.astral_armory.LOGGER
 
 @Mixin(TitleScreen::class)
 class ExampleMixin {
 
+
+
     @Inject(at = [At("HEAD")], method = ["init()V"])
     private fun init(info: CallbackInfo) {
-        println("This line is printed by an example mod mixin!")
+        LOGGER.info("This line is printed by an example mod mixin!")
     }
 }

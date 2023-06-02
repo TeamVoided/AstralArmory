@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "astral_armory",
   "version": "${version}",
 
-  "name": "ModId",
+  "name": "Astral Armory",
   "description": "Writen by end!",
   "authors": [
-    "Ender"
+    "Ender",
+    "Astra"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,19 +15,19 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/astral_armory/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "org.teamvoided.modid.ModIdKt::onInitialize"
+        "value": "org.teamvoided.astral_armory.AstralArmoryKt::onInitialize"
       }
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "astral_armory.mixins.json"
   ],
 
   "depends": {
