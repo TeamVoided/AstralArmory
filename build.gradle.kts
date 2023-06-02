@@ -24,6 +24,9 @@ dependencies {
 
     // Patchouli
     modImplementation("vazkii.patchouli:Patchouli:${property("patchouli")}")
+
+    //Simply Swords
+//    modImplementation("curse.maven:simply-swords-659887:4553235")
 }
 
 tasks {
