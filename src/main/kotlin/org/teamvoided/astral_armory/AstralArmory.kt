@@ -6,6 +6,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import org.teamvoided.astral_armory.blocks.AstralArmoryBlocks
 import org.teamvoided.astral_armory.items.AstralArmoryItems
+import org.teamvoided.astral_armory.items.AstralArmoryTabs
 
 
 const val MODID = "astral_armory"
@@ -21,6 +22,7 @@ fun id(path: String): Identifier = Identifier(MODID, path)
 fun onInitialize() {
     LOGGER.info("We shall be among the Stars!")
 
+    AstralArmoryTabs.register()
     AstralArmoryItems.register()
     AstralArmoryBlocks.register()
 
