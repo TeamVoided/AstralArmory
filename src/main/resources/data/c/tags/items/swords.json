@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    "astral_armory:astral_sword",
+    "astral_armory:astral_longsword",
+    "astral_armory:astral_twinblade",
+    "astral_armory:astral_rapier",
+    "astral_armory:astral_katana",
+    "astral_armory:astral_sai",
+    "astral_armory:astral_spear",
+    "astral_armory:astral_glaive",
+    "astral_armory:astral_warglaive",
+    "astral_armory:astral_cutlass",
+    "astral_armory:astral_greatsword",
+    "astral_armory:astral_greathammer",
+    "astral_armory:astral_greataxe",
+    "astral_armory:astral_chakram",
+    "astral_armory:astral_scythe",
+    "astral_armory:astral_halberd"
+  ]
+}

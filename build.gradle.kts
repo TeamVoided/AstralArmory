@@ -12,6 +12,15 @@ version = property("mod_version")!!
 
 repositories {
     maven { url = uri("https://maven.blamejared.com") }
+
+    maven { url = uri("https://api.modrinth.com/maven") }
+
+    maven { url = uri("https://maven.shedaniel.me/") }
+    maven { url = uri("https://maven.terraformersmc.com/releases/") }
+    maven {
+        name = "KosmX's maven"
+        url = uri("https://maven.kosmx.dev/")
+    }
 }
 
 dependencies {
@@ -25,8 +34,10 @@ dependencies {
     // Patchouli
     modImplementation("vazkii.patchouli:Patchouli:${property("patchouli")}")
 
-    //Simply Swords
-//    modImplementation("curse.maven:simply-swords-659887:4553235")
+    //BetterCombat
+    modImplementation("maven.modrinth:better-combat:${property("better_combat")}-fabric")
+    modApi("me.shedaniel.cloth:cloth-config-fabric:${property("cloth_config")}")
+    modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${property("player_anim")}")
 }
 
 tasks {
