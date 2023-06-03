@@ -16,6 +16,7 @@ object AstralArmoryItems {
 
     val TEST: Item = Item(FabricItemSettings().maxCount(2))
     val ASTRAL_NUGGET: Item = Item(FabricItemSettings())
+    val ASTRAL_INGOT: Item = Item(FabricItemSettings())
 
 
     val ASTRAL_SWORD: Item = AstralWeapon(9, -2.4f)
@@ -39,6 +40,7 @@ object AstralArmoryItems {
     fun register() {
         registerItem(TEST, "test")
         registerItem(ASTRAL_NUGGET, "astral_nugget")
+        registerItem(ASTRAL_INGOT, "astral_ingot")
 
         registerItem(ASTRAL_SWORD, "astral_sword")
         registerItem(ASTRAL_LONGSWORD, "astral_longsword")
