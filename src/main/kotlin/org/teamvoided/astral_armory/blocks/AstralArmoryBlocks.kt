@@ -16,9 +16,8 @@ object AstralArmoryBlocks {
     val BLOCK_ITEMS = LinkedList<ItemStack>()
 
     val TEST_BLOCK: Block = Block(FabricBlockSettings.of(Material.AIR))
-    val ASTRAL_BLOCK: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(3).sounds(BlockSoundGroup.NETHERITE).hardness(55f))
-    val ASTRAL_TILE: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(5).sounds(BlockSoundGroup.NETHERITE).hardness(50f))
-
+    val ASTRAL_BLOCK: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(3).sounds(BlockSoundGroup.NETHERITE).hardness(20f).resistance(20f).requiresTool())
+    val ASTRAL_TILE: Block = Block(FabricBlockSettings.of(Material.METAL).luminance(5).sounds(BlockSoundGroup.NETHERITE).hardness(10f).resistance(20f).requiresTool())
 
     fun register() {
         registerBlock(TEST_BLOCK, "test_block")
