@@ -1,0 +1,6 @@
+{
+	"parent": "astral_armory:item/astral_longsword",
+	"textures": {
+		"layer0": "astral_armory:item/astral_rapier"
+	}
+}

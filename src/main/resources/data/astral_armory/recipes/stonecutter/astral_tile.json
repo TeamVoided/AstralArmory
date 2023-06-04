@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+      "item": "astral_armory:astral_block"
+  },
+  "result": "astral_armory:astral_tile"
+}

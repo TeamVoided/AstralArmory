@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "astral_armory:test_block"
+    "astral_armory:test_block",
+    "astral_armory:astral_block",
+    "astral_armory:astral_tile"
   ]
 }

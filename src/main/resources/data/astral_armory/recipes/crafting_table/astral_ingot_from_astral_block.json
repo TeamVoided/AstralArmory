@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "iron_ingot",
+  "ingredients": [
+    {
+      "item": "astral_armory:astral_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "astral_armory:astral_ingot"
+  }
+}
