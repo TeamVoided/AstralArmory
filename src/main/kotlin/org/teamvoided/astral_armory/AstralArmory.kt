@@ -7,6 +7,10 @@ import org.slf4j.LoggerFactory
 import org.teamvoided.astral_armory.blocks.AstralArmoryBlocks
 import org.teamvoided.astral_armory.items.AstralArmoryItems
 import org.teamvoided.astral_armory.items.AstralArmoryTabs
+import org.teamvoided.astral_armory.items.AstralWeapon
+import org.teamvoided.astral_armory.items.ApiUtil.UPGRADABLE_ITEM
+import org.teamvoided.astral_armory.items.ApiUtil.UPGRADE
+import org.teamvoided.astral_armory.items.upgrades.DamageUpgrade
 
 
 const val MODID = "astral_armory"
@@ -25,5 +29,8 @@ fun onInitialize() {
     AstralArmoryTabs.register()
     AstralArmoryItems.register()
     AstralArmoryBlocks.register()
+
+    UPGRADABLE_ITEM.registerForItems({ stack, _ -> AstralWeapon.UpgradableItemImpl(stack) }, AstralArmoryItems.ASTRAL_SWORD)
+    UPGRADE.registerForItems({ stack, _ -> DamageUpgrade.UpgradeIml(stack) }, AstralArmoryItems.DAMAGE_UPGRADE)
 
 }

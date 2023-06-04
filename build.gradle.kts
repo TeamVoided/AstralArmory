@@ -21,6 +21,12 @@ repositories {
         name = "KosmX's maven"
         url = uri("https://maven.kosmx.dev/")
     }
+    maven("https://maven.brokenfuse.me/releases")
+    maven {
+        name = "Ladysnake Mods"
+        url = uri("https://ladysnake.jfrog.io/artifactory/mods")
+    }
+
 }
 
 dependencies {
@@ -38,6 +44,33 @@ dependencies {
     modImplementation("maven.modrinth:better-combat:${property("better_combat")}-fabric")
     modApi("me.shedaniel.cloth:cloth-config-fabric:${property("cloth_config")}")
     modImplementation("dev.kosmx.player-anim:player-animation-lib-fabric:${property("player_anim")}")
+
+    //VoidLib
+    modImplementation("org.teamvoided:voidlib:${property("voidlib_version")}")
+
+    //Cardinal Components
+    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${property("cardinal_version")}")
+    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${property("cardinal_version")}")
+}
+
+
+
+loom {
+    runs {
+        //
+        // This adds a new gradle task that runs the datagen API: "gradlew runDatagenClient"
+        //
+
+
+        create("DataGeneration") {
+            client()
+            vmArg("-Dfabric-api.datagen")
+            vmArg("-Dfabric-api.datagen.output-dir=${file("src/main/generated")}")
+            vmArg("-Dfabric-api.datagen.modid=${property("modid")}")
+            runDir("build/datagen")
+        }
+
+    }
 }
 
 tasks {
