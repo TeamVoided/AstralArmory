@@ -21,7 +21,7 @@ enum class AstralToolMaterials(
         0f,
         0f,
         0,
-        Supplier { Ingredient.ofItems(*arrayOf<ItemConvertible>(AstralArmoryItems.TEST)) });
+        Supplier { Ingredient.ofItems(*arrayOf<ItemConvertible>(AstralArmoryItems.ASTRAL_INGOT)) });
 
     private val repairIngredient: Lazy<Ingredient>
 

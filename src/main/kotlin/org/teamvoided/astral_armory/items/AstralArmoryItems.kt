@@ -7,6 +7,8 @@ import net.minecraft.item.ItemStack
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import org.teamvoided.astral_armory.id
+import org.teamvoided.astral_armory.items.upgrades.DamageUpgrade
+import org.teamvoided.astral_armory.items.upgrades.UpgradeRarity
 import java.util.*
 
 
@@ -19,23 +21,25 @@ object AstralArmoryItems {
     val ASTRAL_INGOT: Item = Item(FabricItemSettings())
 
 
-    val ASTRAL_SWORD: Item = AstralWeapon(9, -2.4f)
+    val ASTRAL_SWORD: Item = AstralWeapon(9f, -2.4f)
 
-    val ASTRAL_LONGSWORD: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_TWINBLADE: Item = AstralWeapon(8, -2.4f)
-    val ASTRAL_RAPIER: Item = AstralWeapon(7, -2.4f)
-    val ASTRAL_KATANA: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_SAI: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_SPEAR: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_GLAIVE: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_WARGLAIVE: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_CUTLASS: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_GREATSWORD:  Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_GREATHAMMER:  Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_GREATAXE: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_CHAKRAM: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_SCYTHE: Item = AstralWeapon(9, -2.4f)
-    val ASTRAL_HALBERD: Item = AstralWeapon(9, -2.4f)
+    val ASTRAL_LONGSWORD: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_TWINBLADE: Item = AstralWeapon(8f, -2.4f)
+    val ASTRAL_RAPIER: Item = AstralWeapon(7f, -2.4f)
+    val ASTRAL_KATANA: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_SAI: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_SPEAR: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_GLAIVE: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_WARGLAIVE: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_CUTLASS: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_GREATSWORD:  Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_GREATHAMMER:  Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_GREATAXE: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_CHAKRAM: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_SCYTHE: Item = AstralWeapon(9f, -2.4f)
+    val ASTRAL_HALBERD: Item = AstralWeapon(9f, -2.4f)
+
+    val DAMAGE_UPGRADE: Item = DamageUpgrade(FabricItemSettings().maxCount(16), UpgradeRarity.COMMON)
     fun register() {
 
         registerItem(TEST, "test")
@@ -58,6 +62,10 @@ object AstralArmoryItems {
         registerItem(ASTRAL_SPEAR, "astral_spear")
         registerItem(ASTRAL_TWINBLADE, "astral_twinblade")
         registerItem(ASTRAL_WARGLAIVE, "astral_warglaive")
+
+        registerItem(DAMAGE_UPGRADE, "damage_upgrade")
+
+
 
 
 
