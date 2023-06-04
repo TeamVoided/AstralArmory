@@ -47,10 +47,10 @@ dependencies {
 
     //VoidLib
     modImplementation("org.teamvoided:voidlib:${property("voidlib_version")}")
-
-    //Cardinal Components
-    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${property("cardinal_version")}")
-    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${property("cardinal_version")}")
+//
+//    //Cardinal Components
+//    modApi("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${property("cardinal_version")}")
+//    modImplementation("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${property("cardinal_version")}")
 }
 
 

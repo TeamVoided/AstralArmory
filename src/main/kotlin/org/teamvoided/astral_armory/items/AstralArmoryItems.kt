@@ -7,8 +7,9 @@ import net.minecraft.item.ItemStack
 import net.minecraft.registry.Registries
 import net.minecraft.registry.Registry
 import org.teamvoided.astral_armory.id
-import org.teamvoided.astral_armory.items.upgrades.DamageUpgrade
+import org.teamvoided.astral_armory.items.upgrades.UpgradeItem
 import org.teamvoided.astral_armory.items.upgrades.UpgradeRarity
+import org.teamvoided.astral_armory.items.upgrades.UpgradeType
 import java.util.*
 
 
@@ -39,7 +40,7 @@ object AstralArmoryItems {
     val ASTRAL_SCYTHE: Item = AstralWeapon(9f, -2.4f)
     val ASTRAL_HALBERD: Item = AstralWeapon(9f, -2.4f)
 
-    val DAMAGE_UPGRADE: Item = DamageUpgrade(FabricItemSettings().maxCount(16), UpgradeRarity.COMMON)
+    val COMMON_UPGRADE: Item = UpgradeItem(FabricItemSettings().maxCount(16), UpgradeRarity.COMMON, UpgradeType.DAMAGE)
     fun register() {
 
         registerItem(TEST, "test")
@@ -63,7 +64,7 @@ object AstralArmoryItems {
         registerItem(ASTRAL_TWINBLADE, "astral_twinblade")
         registerItem(ASTRAL_WARGLAIVE, "astral_warglaive")
 
-        registerItem(DAMAGE_UPGRADE, "damage_upgrade")
+        registerItem(COMMON_UPGRADE, "common_upgrade")
 
 
 

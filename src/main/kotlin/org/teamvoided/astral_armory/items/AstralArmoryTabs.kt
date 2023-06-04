@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import org.teamvoided.astral_armory.blocks.AstralArmoryBlocks
 import org.teamvoided.astral_armory.id
+import org.teamvoided.astral_armory.items.upgrades.UpgradeItem
 
 object AstralArmoryTabs {
 
@@ -14,6 +15,10 @@ object AstralArmoryTabs {
         ItemGroupEvents.modifyEntriesEvent(ASTRAL_ARMORY_TAB).register(ItemGroupEvents.ModifyEntries { content ->
             content.addAll(AstralArmoryItems.ITEM_LIST)
             content.addAll(AstralArmoryBlocks.BLOCK_ITEMS)
+
+            content.add(AstralWeapon.setDefaults(AstralArmoryItems.ASTRAL_SWORD.defaultStack))
+            content.add(UpgradeItem.setDefault(AstralArmoryItems.COMMON_UPGRADE.defaultStack))
+
         })
     }
 }

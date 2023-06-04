@@ -10,7 +10,7 @@ import org.teamvoided.astral_armory.items.AstralArmoryTabs
 import org.teamvoided.astral_armory.items.AstralWeapon
 import org.teamvoided.astral_armory.items.ApiUtil.UPGRADABLE_ITEM
 import org.teamvoided.astral_armory.items.ApiUtil.UPGRADE
-import org.teamvoided.astral_armory.items.upgrades.DamageUpgrade
+import org.teamvoided.astral_armory.items.upgrades.UpgradeItem
 
 
 const val MODID = "astral_armory"
@@ -24,13 +24,13 @@ fun id(path: String): Identifier = Identifier(MODID, path)
 
 @Suppress("unused")
 fun onInitialize() {
-    LOGGER.info("We shall be among the Stars!")
+    LOGGER.info("We shall be among (us) the Stars!")
 
     AstralArmoryTabs.register()
     AstralArmoryItems.register()
     AstralArmoryBlocks.register()
 
     UPGRADABLE_ITEM.registerForItems({ stack, _ -> AstralWeapon.UpgradableItemImpl(stack) }, AstralArmoryItems.ASTRAL_SWORD)
-    UPGRADE.registerForItems({ stack, _ -> DamageUpgrade.UpgradeIml(stack) }, AstralArmoryItems.DAMAGE_UPGRADE)
+    UPGRADE.registerForItems({ stack, _ -> UpgradeItem.UpgradeIml(stack) }, AstralArmoryItems.COMMON_UPGRADE)
 
 }
